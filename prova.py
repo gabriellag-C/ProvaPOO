@@ -34,16 +34,22 @@ class Medicamento:
         if valor > 0:
             raise ValueError ("Valor informado Inválido")
         self._valor = valor
-    
-        @classmethod
-    def de_registro(self, reg: reg) - > str:
-        self._reg.append(a
-        reg = reg++ 
+        
+##Implementação dos métodos estaticos   
+    @classmethod
+    def de_registro(cls, reg_nome, reg_lote, reg_validade, reg_qnt, reg_valor) -> str:
+        cls.reg_nome.append(nome)
+        cls.reg_lote(lote)
+        cls.reg_validade(validade)
+        cls.reg_qnt(quantidade)
+        cls.reg_valor(valor)
 
-    def dias_para_vencer(date) -> int:   
+    @staticmethod
+    def dias_para_vencer(date) -> int:
+        date(input("Digite a data de vencimento: "))
         hoje = date.today()
-        falta = hoje - validade 
-        print(f"Hoje é: {hoje} e ainda faltam {} dias para vencer")
+        falta = validade - hoje
+        print(f"Hoje é: {hoje} e ainda faltam {falta} dias para vencer")
     
     
 
